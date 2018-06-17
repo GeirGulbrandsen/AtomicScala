@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object Values extends App {
+object E01_Values extends App {
 
   val seventeen = 17
 

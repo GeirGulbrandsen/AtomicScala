@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object CompoundExpressions extends App {
+object E07_CompoundExpressions extends App {
   val a = 1
   val b = 6
   val c = 5

@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object Variables extends App {
+object E03_Variables extends App {
 
   var integer: Int = 5
   integer = 10

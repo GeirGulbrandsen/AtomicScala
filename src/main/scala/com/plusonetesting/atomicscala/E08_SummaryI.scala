@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object SummaryI extends App {
+object E08_SummaryI extends App {
 
   val myInt: Int = 16
   println(myInt)

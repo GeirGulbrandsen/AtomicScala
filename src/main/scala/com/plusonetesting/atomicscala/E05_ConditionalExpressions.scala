@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object ConditionalExpressions extends App {
+object E05_ConditionalExpressions extends App {
 
   val a = 1
   val b = 5

@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object Expressions extends App {
+object E04_Expressions extends App {
 
   val miles = {
     val feetPerMile = 5280

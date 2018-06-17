@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object EvaluationOrder extends App {
+object E06_EvaluationOrder extends App {
 
   val sunny = false
   val partiallyCloudy = true

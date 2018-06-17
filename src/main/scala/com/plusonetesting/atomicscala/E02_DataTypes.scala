@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object DataTypes extends App {
+object E02_DataTypes extends App {
 
   val int: Int = 5
   println(int)

@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-object Methods extends App {
+object E09_Methods extends App {
 
   def getSquare(toBeSquared: Int): Int = {
     toBeSquared * toBeSquared
