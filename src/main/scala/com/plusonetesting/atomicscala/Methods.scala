@@ -82,4 +82,21 @@ object Methods extends App {
   testManyTimesString("abc",3,  "abcabcabc")
   testManyTimesString("123",3,  "123123123")
 
+  def bmiStatus(lbs: Double, height: Double): String = {
+    val bmi = lbs / (height * height) * 703.07
+    if (bmi < 18.5) "Underweight"
+    else if (bmi < 25) "Normal weight"
+    else "Overweight"
+  }
+
+  def testBmiStatus(): Unit = {
+    val normal: String = bmiStatus(160, 68)
+    assert(normal == "Normal weight", "Expected Normal weight, got " + normal)
+    val overweight: String = bmiStatus(180, 60)
+    assert(overweight == "Overweight", "Expected Overweight, got " + overweight)
+    val underweight: String = bmiStatus(100, 68)
+    assert(underweight == "Underweight", "Expected Underweight, got " + underweight)
+    println("bmiStatus = OK")
+  }
+  testBmiStatus()
 }
