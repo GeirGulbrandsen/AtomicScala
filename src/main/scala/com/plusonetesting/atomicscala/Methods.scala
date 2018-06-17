@@ -2,34 +2,34 @@ package com.plusonetesting.atomicscala
 
 object Methods extends App {
 
-  def getSquare(toBeSquared: Int): Int ={
+  def getSquare(toBeSquared: Int): Int = {
     toBeSquared * toBeSquared
   }
 
-  def testSquare(toBeSquared: Int, expected: Int):Unit = {
+  def testSquare(toBeSquared: Int, expected: Int): Unit = {
     val a = getSquare(toBeSquared)
     assert(a == expected, "Expexted " + expected + ", got " + a)
   }
 
-  testSquare(3,9)
-  testSquare(6,36)
-  testSquare(5,25)
+  testSquare(3, 9)
+  testSquare(6, 36)
+  testSquare(5, 25)
 
-  def getSquareDouble(toBeSquared: Double): Double ={
+  def getSquareDouble(toBeSquared: Double): Double = {
     toBeSquared * toBeSquared
   }
 
-  def testSquareDouble(toBeSquared: Double, expected: Double):Unit = {
+  def testSquareDouble(toBeSquared: Double, expected: Double): Unit = {
     val a = getSquareDouble(toBeSquared)
     assert(a == expected, "Expexted " + expected + ", got " + a)
   }
 
-  testSquareDouble(1.2,1.44)
-  testSquareDouble(5.7,32.49)
+  testSquareDouble(1.2, 1.44)
+  testSquareDouble(5.7, 32.49)
 
 
   def isArg1GreaterThanArg2(thisOne: Double, thatOne: Double): Boolean = {
-   thisOne > thatOne
+    thisOne > thatOne
   }
 
   def testIsArg1GreaterThanArg2(thisOne: Double, thatOne: Double, expected: Boolean): Unit = {
@@ -47,7 +47,7 @@ object Methods extends App {
   }
 
   def testGetMe(toConvert: String, expected: String): Unit = {
-    val result:String = getMe(toConvert)
+    val result: String = getMe(toConvert)
     assert(result == expected, "Expexted " + expected + ",got " + result)
   }
 
@@ -63,12 +63,23 @@ object Methods extends App {
   def testAddStrings(thisString: String, thatString: String, expected: String): Unit = {
     val result: String = addStrings(thisString, thatString)
     println(result)
-    assert(result == expected, "Expected " + ",got " + result)
+    assert(result == expected, "Expected " + expected + ",got " + result)
   }
 
   testAddStrings("abc", "def", "abcdef")
   testAddStrings("zyx", "abc", "zyxabc")
 
+  def manyTimesString(thisString: String, times: Int): String = {
+    thisString * times
+  }
 
+  def testManyTimesString(thisString: String, times: Int, expected: String): Unit = {
+    val result: String = manyTimesString(thisString, times)
+    println(result)
+    assert(result == expected, "Expected " + expected + ",got " + result)
+  }
+
+  testManyTimesString("abc",3,  "abcabcabc")
+  testManyTimesString("123",3,  "123123123")
 
 }
