@@ -1,6 +1,6 @@
 package com.plusonetesting.atomicscala
 
-import com.atomicscala.pythegorean.{EquilateralTriangle, RightTriangle}
+import com.atomicscala.pythegorean._
 
 object E13_ImportsAndPackages extends App {
 
